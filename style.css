@@ -1,0 +1,33 @@
+body{
+    background: #F5F5ED;
+    color: black;
+
+}
+h1::before{content:'1.';}
+h1::after{content:'-기본';}
+
+@media(max-width:2100px){
+    body{background: rgb(81, 255, 0);}
+    h1::before{content:'2.';}
+    h1::after{content:'-둘';}
+}
+@media(max-width:2000px){
+    body{background: blue;}
+    h1::before{content:'3.';}
+h1::after{content:'-셋';}
+}
+@media(max-width:1024px){
+    body{background: red;}
+    h1::before{content:'4.';}
+h1::after{content:'-넷';}
+
+}
+@media(max-width:1280px){
+    body{background: yellow;}
+    h1::before{content:'5.';}
+h1::after{content:'-다섯';}
+}
+
+.container {
+    width: 50%
+}
